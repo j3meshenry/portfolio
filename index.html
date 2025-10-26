@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+    <title>James</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-inner">
+            <a class="brand" href="#home">
+          <img src="./assets/Brand.png" alt="Logo" class="brand-mark" />
+            </a>
+
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+            </button>
+        </div>
+        <nav class="nav-panel" id="navPanel" aria-label="Mobile menu">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#projects" onclick="closeMenu()">Projects</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <div class="container intro">
+                <h1>Hello, I'm <span class="gradient-text">James</span>!</h1>
+                <p>I am a <span class="roles"><span id="roles"></span>.</span></p>
+            </div>
+        </div>
+
+        <div class="home-image">
+            <img src="./assets/homeimage.jpeg" alt="James" />
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1: Digital Piano -->
+      <div class="project-card" id="project-digital-piano">
+        <div class="project-header"><h3>Piano</h3></div>
+        <div class="project-inner">
+          <div class="project-images">
+            <img src="./assets/digitalPiano.png" alt="Digital Piano" class="project-image" />
+            <img src="./assets/digitalPianoSchematic.png" alt="R2R DAC Schematic" class="project-image" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> James Henry, Jessica Tran, Emmanuel Velazquez, Pierre Nguyen</div>
+            <div class="project-meta"><strong>Tools:</strong> Keil uVision 5, C, TM4C123GXL, 6-bit R/2R DAC, LM386 amplifier, Buttons (SW1, SW2)</div>
+            <p>We transformed the TM4C123 into a playable digital piano supporting real-time and auto-play modes. Tones are generated using a 64-sample sine table through a 6-bit R/2R DAC with SysTick timing at 16&nbsp;MHz. PD0–PD3 map to keys C–F; SW1 toggles Piano/Auto-Play and SW2 changes octave or cycles songs. A speaker driven by an LM386 delivers clear notes across 3+ octaves.</p>
+            <div class="project-tags">
+             </div>
+            <a class="yt-link" href="https://youtube.com/shorts/irjYnFWq96w?si=uZYvbHeKXsPG5hDi" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+              <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Bluetooth Controlled Car -->
+      <div class="project-card" id="project-bluetooth-car">
+        <div class="project-header"><h3>Bluetooth Controlled Car</h3></div>
+        <div class="project-inner">
+          <div class="project-images">
+            <img src="./assets/RomiCar.png" alt="Bluetooth Car" class="project-image" />
+            <img src="./assets/BTRobotCarSchem.png" alt="UART PWM Diagram" class="project-image" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> Individual</div>
+            <div class="project-meta"><strong>Tools:</strong> Keil uVision 5, C, TM4C123GXL, Romi Car, HC-05 (UART), PWM motor control, ADC filter, Power supply</div>
+            <p>Built a Bluetooth-driven robot car controllable via smartphone/PC. Implemented UART command parsing, PWM motor speed control, and GPIO direction outputs. Two modes: <em>Demo</em> and <em>Manual</em> for flexible operation.</p>
+            <div class="project-tags">
+             </div>
+            <a class="yt-link" href="https://youtube.com/shorts/F-WCR3u1-lY" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+              <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Hardware-Based Game Engine -->
+      <div class="project-card" id="project-hw-game-engine">
+        <div class="project-header"><h3>Hardware-Based Game Engine</h3></div>
+        <div class="project-inner">
+          <div class="project-images">
+            <img src="./assets/GameEngine.png" alt="Nokia 5110 LCD" class="project-image" />
+            <img src="./assets/GameEngineSchem.png" alt="R2R DAC Audio" class="project-image" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> James Henry, Kyle Leng, Matthew Kim, Cesar Hernandez</div>
+            <div class="project-meta"><strong>Tools:</strong> R2R Ladder DAC, Audio Amp, Nokia 5110 LCD, TM4C123GXL, C</div>
+            <p>Microcontroller game engine driving a Nokia 5110 LCD for graphics and R2R/amp for audio; focus on timing, input, and rendering loops.</p>
+            <div class="project-tags">
+              </div>
+            <a class="yt-link" href="https://www.youtube.com/shorts/vLOXsl8Swuw?feature=share" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+              <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Ultrasonic Security System -->
+      <div class="project-card" id="project-ultrasonic-security">
+        <div class="project-header"><h3>Ultrasonic Security System</h3></div>
+        <div class="project-inner">
+          <div class="project-images">
+            <img src="./assets/UltrasonicSecuritySystem.png" alt="Ultrasonic Security" class="project-image" />
+            <img src="./assets/UltrasonicSecuritySystemShem.png" alt="UART Debug" class="project-image" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> Kimberley Martinez, Emily Gomez, Diego Davalos</div>
+            <div class="project-meta"><strong>Tools:</strong> TM4C123GXL, Ultrasonic Sensors, UART, Voltage Divider</div>
+            <p>Intrusion detection using ultrasonic range sensing on the TM4C123, with UART status output and protected voltage measurement via divider.</p>
+            <div class="project-tags">
+               </div>
+            <a class="yt-link" href="https://www.youtube.com/shorts/aiyNjbvrjD4" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+              <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Planet Simulator -->
+      <div class="project-card" id="project-planet-sim">
+        <div class="project-header"><h3>Planet Simulator</h3></div>
+        <div class="project-inner">
+          <div class="project-images">
+            <img src="./assets/PlanetSimSS.png" alt="vPython Orbits" class="project-image" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><strong>Tools:</strong> vPython</div>
+            <p>Gravity-based orbital simulation visualized in vPython; explore parameters like mass, velocity, and eccentricity.</p>
+            <div class="project-tags">
+              </div>
+            <a class="yt-link" href="https://j3meshenry.github.io/jamesplanetsim/jamesplanetsim.html" target="_blank" rel="noopener noreferrer" aria-label="View Planet Simulation">
+              <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Smart House + Smart Car -->
+      <div class="project-card" id="project-smart-house-car">
+        <div class="project-header"><h3>Smart House + Smart Car</h3></div>
+        <div class="project-inner">
+          <div class="project-images">
+            <img src="./assets/StepperMotorCar.jpg" alt="Stepper Chassis" class="project-image" />
+            <img src="./assets/StepperMotorCar_Schematic_Car.png" alt="LCD UI" class="project-image" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> Ivan Martinez, James Henry, Roy Mears</div>
+            <div class="project-meta"><strong>Tools:</strong> TM4C123GXL, 28BYJ-48 Stepper Motors, ULN2003 Drivers, HW-201 IR Sensor, Moore FSM, SysTick Timers, Interrupts, 1 µF Power Filter Circuit</div>
+            <p>Designed two synchronized embedded systems — a <em>Smart House</em> and a <em>Stepper Motor Car</em> — with stable ISR timing and filtered power control.</p>
+            <div class="project-tags">
+              </div>
+            <a class="yt-link" href="https://youtu.be/Xt6wRPq74Jg?feature=shared" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+              <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container contact-content">
+    <h2>Contact</h2>
+    <p style="color: #888888; font-size: 1.25rem; margin-bottom: 2rem;">
+      Let's connect! Feel free to reach out through any of these channels.
+    </p>
+
+    <div class="contact-links">
+      <a href="mailto:jameshenry482@gmail.com" class="contact-link">
+        <img src="./assets/gmail.png" alt="Email Logo" class="contact-icon" />
+        <div>jameshenry482@gmail.com</div>
+      </a>
+
+      <a href="https://github.com/j3meshenry" target="_blank" class="contact-link">
+        <img src="./assets/githubwhite.png" alt="GitHub Logo" class="contact-icon" />
+        <div>GitHub</div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/j3meshenry/" target="_blank" class="contact-link">
+        <img src="./assets/linkedin.png" alt="LinkedIn Logo" class="contact-icon" />
+        <div>LinkedIn</div>
+      </a>
+
+      <a href="https://www.youtube.com/@J3mesHenry/" target="_blank" class="contact-link">
+        <img src="./assets/Youtube_logo.png" alt="YouTube Logo" class="contact-icon" />
+        <div>YouTube</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
