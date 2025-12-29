@@ -50,6 +50,130 @@
   <div class="container">
     <h2>Projects</h2>
     <div class="projects-grid">
+    
+
+          <!-- Project: Telemetry System -->
+          <div class="project-card" id="project-telemetry-system">
+            <div class="project-header"><h3>RF Telemetry System</h3></div>
+            <div class="project-inner">
+              <div class="project-images">
+                <img src="./assets/digitalPiano.png" alt="Radio Telemetry System" class="project-image" />
+                <img src="./assets/digitalPianoSchematic.png" alt="R2R DAC Schematic" class="project-image" />
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><strong>Team:</strong> James Henry, Cesar Hernandez, Jordan Havelaar, Matthew Kim</div>
+                <div class="project-meta"><strong>Tools:</strong> Cube IDE, C, STM32 Nucleo F446RE, FIR Filters, RF, LoRA, MPU6050, BMP388</div>
+                <p>Solves the problem rockets have when sending data back to Earth, long-range wireless communication to track your vehicle. My Telemetry System (AeroSync), uses two LoRa transceivers (one to receiver, the other to transmit), a 6-axis IMU, Barometer, a software-based 4-point running averager FIR filter to handle the transmission data, and a custom-made application that orients your real-world vehicle with it’s software equivalent in real-time.</p>
+                <div class="project-tags">
+                 </div>
+                <a class="yt-link" href="https://youtube.com/shorts/irjYnFWq96w?si=uZYvbHeKXsPG5hDi" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+                  <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+    <!-- Project: Hardware Speech Translator (English to Spanish) -->
+    <div class="project-card" id="project-speech-translator">
+        <div class="project-header"><h3>Speech Translator</h3></div>
+        <div class="project-inner">
+        <div class="project-images">
+            <img src="./assets/digitalPiano.png" alt="ESP32 Translator" class="project-image" />
+            <img src="./assets/digitalPianoSchematic.png" alt="Translator Schematic" class="project-image" />
+        </div>
+        <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> James Henry, Ivan Martinez</div>
+            <div class="project-meta"><strong>Tools:</strong> I2S Speaker, I2S Amplifier, I2S Microphone, Resistors, ESP32 (2x), FIR Filter, Flask Spanish Server (Google Translate Open API)</div>
+            <p>Solves the language barrier challenge using hardware. We developed this project using two ESP32 Microcontrollers. Node 1 takes the user’s speech in English as input, sends it to the server, and Node 2 processes the Spanish text as a voice, which is transmitted through the speaker. Designed an FIR Filter to take care of harmonics in signal processing.</p>
+            <div class="project-tags">
+            </div>
+            <a class="yt-link" href="https://youtube.com/shorts/irjYnFWq96w?si=uZYvbHeKXsPG5hDi" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+            <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+            </a>
+        </div>
+        </div>
+    </div>
+
+        <!-- Project: Weather Forecast System -->
+        <div class="project-card" id="project-forecast-system">
+            <div class="project-header"><h3>Embedded Weather Forecaster</h3></div>
+            <div class="project-inner">
+            <div class="project-images">
+                <img src="./assets/digitalPiano.png" alt="Embedded Weather Forecaster" class="project-image" />
+                <img src="./assets/digitalPianoSchematic.png" alt="Block Diagram" class="project-image" />
+            </div>
+            <div class="project-content">
+                <div class="project-meta"><strong>Team:</strong> James Henry, Pierre Nguyen, Jessica Tran, Emmanuel Velasquez</div>
+                <div class="project-meta"><strong>Tools:</strong> Weather Open API, CC33110 Booster, TM4C123GXL, C, Keil uVision, LCD Screen</div>
+                <p>Developed a network-enabled embedded weather forecast system leveraging a TM4C123 microcontroller and CC3100 WiFi module to communicate with the OpenWeatherMap REST API. The system performs HTTP GET requests, parses JSON weather data in real time, and renders formatted output on an ST7735 LCD display. UART was used for command input and diagnostics, while SPI communication enabled efficient data transfer between peripherals. This project demonstrates proficiency in embedded networking, protocol-level debugging, and hardware–software integration.</p>
+                <div class="project-tags">
+                </div>
+                <a class="yt-link" href="https://youtube.com/shorts/irjYnFWq96w?si=uZYvbHeKXsPG5hDi" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+                <img class="yt-icon" src="./assets/youtube_logo.png" alt="YouTube Logo" />
+                </a>
+            </div>
+            </div>
+        </div>
+
+    <!-- Project: Image Processor (For Computer Vision) -->
+    <div class="project-card" id="project-image-processor">
+        <div class="project-header"><h3>Image Processing for Computer Vision</h3></div>
+        <div class="project-inner">
+        <div class="project-images">
+            <img src="./assets/digitalPiano.png" alt="Sobel Image Processing" class="project-image" />
+        </div>
+        <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> James Henry</div>
+            <div class="project-meta"><strong>Tools:</strong> MATLAB, Sobel Operator, Dilation, Erosion</div>
+            <p>Developed an image processing pipeline in MATLAB leveraging logical operators and matrix-based operations to perform fundamental computer vision tasks. The project implemented grayscale image thresholding to generate binary images, logical masking to isolate regions of interest, Sobel-based edge detection using gradient operators, and morphological operations including dilation, erosion, opening, and closing to enhance image structure and reduce noise. Emphasis was placed on selecting appropriate thresholds, defining accurate masks, and optimizing edge detection results while preserving image integrity. The project strengthened proficiency in logical indexing, convolution-based filtering, and algorithmic image manipulation within MATLAB’s numerical computing environment.</p>
+            <div class="project-tags">
+            </div>
+            <a class="yt-link" href="https://youtube.com/shorts/irjYnFWq96w?si=uZYvbHeKXsPG5hDi" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+            <img class="yt-icon" src="./assets/github.png" alt="GitHub Logo" />
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Project: Central Processing Unit -->
+    <div class="project-card" id="project-image-cpu">
+        <div class="project-header"><h3>CPU (MIPS Architecture)</h3></div>
+        <div class="project-inner">
+        <div class="project-images">
+            <img src="./assets/digitalPiano.png" alt="MIPS CPU" class="project-image" />
+        </div>
+        <div class="project-content">
+            <div class="project-meta"><strong>Team:</strong> James Henry</div>
+            <div class="project-meta"><strong>Tools:</strong> System Verilog, Vivado, Assembly Language</div>
+            <p>Used Verilog to model a MIPS architecture CPU. The first step I focused on when developing this was the ALU and its opcodes, as they were lengthy. Overall, I designed the datapath, illustrating how the machine fetches, decodes, executes, memory access module, and write-back stage. It supports R-type load/store and branching instructions. </p>
+            <div class="project-tags">
+            </div>
+            <a class="yt-link" href="https://github.com/j3meshenry/ALU" target="_blank" rel="noopener noreferrer" aria-label="Github Link">
+            <img class="yt-icon" src="./assets/github.png" alt="GitHub Logo" />
+            </a>
+        </div>
+        </div>
+    </div>
+
+        <!-- Project: Etch-a-sketch -->
+        <div class="project-card" id="project-image-cpu">
+            <div class="project-header"><h3>Etch-A-Sketch</h3></div>
+            <div class="project-inner">
+            <div class="project-images">
+                <img src="./assets/digitalPiano.png" alt="MIPS CPU" class="project-image" />
+            </div>
+            <div class="project-content">
+                <div class="project-meta"><strong>Team:</strong> James Henry</div>
+                <div class="project-meta"><strong>Tools:</strong> System Verilog, Vivado, Assembly Language</div>
+                <p>Used Verilog to model a MIPS architecture CPU. The first step I focused on when developing this was the ALU and its opcodes, as they were lengthy. Overall, I designed the datapath, illustrating how the machine fetches, decodes, executes, memory access module, and write-back stage. It supports R-type load/store and branching instructions. </p>
+                <div class="project-tags">
+                </div>
+                <a class="yt-link" href="https://github.com/j3meshenry/ALU" target="_blank" rel="noopener noreferrer" aria-label="Github Link">
+                <img class="yt-icon" src="./assets/github.png" alt="GitHub Logo" />
+                </a>
+            </div>
+            </div>
+        </div>
 
       <!-- Project 1: Digital Piano -->
       <div class="project-card" id="project-digital-piano">
